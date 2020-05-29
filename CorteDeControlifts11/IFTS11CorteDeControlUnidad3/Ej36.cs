@@ -65,7 +65,7 @@ namespace IFTS11CorteDeControlUnidad3
                 cantidadVendida = 0;
 
             }
-            Console.WriteLine($"La sucursal con mejor venta fue {sucMasVentas} y vendió " {cantVsucursal} productos");
+            Console.WriteLine($"La sucursal con mejor venta fue {sucMasVentas} y vendió {cantVsucursal} productos");
         }
 
     }
