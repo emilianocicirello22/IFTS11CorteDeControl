@@ -34,7 +34,7 @@ namespace IFTS11CorteDeControlUnidad3
             while (!codigoSucursal.Equals("y"))
             {
                 //este sirve para ingresar los datos y ralizar el primer corte de control              
-                while (codigoSucursal.Equals(codigoSucAux))
+                while (codigoSucursal.Equals(codigoSucAux) && !codigoSucursal.Equals("y"))
                 {
                     //ingresamos productos
                     Console.WriteLine("Ingrese Producto");
