@@ -52,22 +52,14 @@ namespace IFTS11CorteDeControlUnidad3
                 Console.WriteLine($"La Sucursal: {codigoSucAux} Vendio {cantidadVendida} Productos");
                 
                 //en este if vamos a calcular que sucusal vendio mas
-                if (cantVsucursal == 0)
+                if (cantVsucursal < cantidadVendida)
                 {
 
                     sucMasVentas = codigoSucAux;
                     cantVsucursal = cantidadVendida;
 
                 }
-                else
-                {
-                    if (cantVsucursal < cantidadVendida)
-                    {
-
-                        sucMasVentas = codigoSucAux;
-                        cantVsucursal = cantidadVendida;
-                    }
-                }
+                
 
                 //reiniciamos variables para ingresar una nueva sucursal si es necesario
                 codigoSucAux = codigoSucursal;
