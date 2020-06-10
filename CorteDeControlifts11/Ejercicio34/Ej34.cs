@@ -17,7 +17,7 @@ namespace Ejercicio34
             String nombre = "";
             double notas = 0;
             double promedio = 0;
-            int cantidadAlumnos = 0;
+            int continuar = 0;
             String aprobado = "";
             bool checkDatos = true;
             /*
@@ -59,12 +59,12 @@ namespace Ejercicio34
 
                 //preguntamos si quiere seguir cargando alumnos no finalizar
                 Console.WriteLine("Para continuar ingrese 1 \n para finalizar ingrese 0");
-                cantidadAlumnos = int.Parse(Console.ReadLine());
+                continuar = int.Parse(Console.ReadLine());
                 
                 //Reinicio la variable promedio
                 promedio = 0;
 
-            } while (cantidadAlumnos != 0);
+            } while (continuar != 0);
 
             
 
@@ -123,9 +123,9 @@ namespace Ejercicio34
 
 
             Console.WriteLine("Ingrese 1 para cargar datos \n 0 para finalizar");
-            cantidadAlumnos = int.Parse(Console.ReadLine());
+            continuar = int.Parse(Console.ReadLine());
 
-            while (cantidadAlumnos != 0)
+            while (continuar != 0)
             {
                 //esta variable permite chequear si se ingreso un dato
                 checkDatos = false;
@@ -165,7 +165,7 @@ namespace Ejercicio34
 
                 //pregunamos si quiere seguir cargando datos
                 Console.WriteLine("Ingrese 1 para cargar datos \n 0 para finalizar");
-                cantidadAlumnos = int.Parse(Console.ReadLine());
+                continuar = int.Parse(Console.ReadLine());
             }
 
             //mensaje si no se ingresaron datos
